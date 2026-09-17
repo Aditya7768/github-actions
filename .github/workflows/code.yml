@@ -2,7 +2,8 @@
 name: code
 #when
 on: 
-   push:
+   workflow_call:
+     
 #jobs in
 jobs:
   code-checkout:
@@ -11,5 +12,5 @@ jobs:
       - name: clone the code
         uses: actions/checkout@v7
 
-      -name: print the message 
+      - name: print the message 
         run: echo "code cloned"
