@@ -1,0 +1,10 @@
+name: Build
+
+on: #trigger
+   workflow_call: # whenever  workflow needs to called from another r
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+       - name: build
